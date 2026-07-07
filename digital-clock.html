@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="css/clock-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <p class="subtitle">Current time in different time zones</p>
+        
+        <div class="clocks-grid">
+            <!-- New York -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>New York</h2>
+                    <p class="timezone">EST/EDT (UTC-5/-4)</p>
+                </div>
+                <div class="clock-display" id="ny-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- London -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>London</h2>
+                    <p class="timezone">GMT/BST (UTC+0/+1)</p>
+                </div>
+                <div class="clock-display" id="london-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- Paris -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Paris</h2>
+                    <p class="timezone">CET/CEST (UTC+1/+2)</p>
+                </div>
+                <div class="clock-display" id="paris-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- Tokyo -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Tokyo</h2>
+                    <p class="timezone">JST (UTC+9)</p>
+                </div>
+                <div class="clock-display" id="tokyo-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- Sydney -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Sydney</h2>
+                    <p class="timezone">AEDT/AEST (UTC+11/+10)</p>
+                </div>
+                <div class="clock-display" id="sydney-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- Dubai -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Dubai</h2>
+                    <p class="timezone">GST (UTC+4)</p>
+                </div>
+                <div class="clock-display" id="dubai-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- Singapore -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Singapore</h2>
+                    <p class="timezone">SGT (UTC+8)</p>
+                </div>
+                <div class="clock-display" id="singapore-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+
+            <!-- São Paulo -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>São Paulo</h2>
+                    <p class="timezone">BRT/BRST (UTC-3/-2)</p>
+                </div>
+                <div class="clock-display" id="sao-paulo-clock">
+                    <div class="time">00:00:00</div>
+                    <div class="date">Mon, Jan 01</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="refresh-btn" class="btn">Refresh Now</button>
+            <button id="toggle-format" class="btn">Toggle 12/24 Hour</button>
+        </div>
+
+        <div class="local-time">
+            <h3>Your Local Time</h3>
+            <div class="clock-display" id="local-clock">
+                <div class="time">00:00:00</div>
+                <div class="date">Mon, Jan 01</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/clock-script.js"></script>
+</body>
+</html>
